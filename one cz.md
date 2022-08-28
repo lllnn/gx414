@@ -1,2 +1,0 @@
-# code(by cz)
-lxynb
