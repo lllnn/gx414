@@ -1,0 +1,152 @@
+void CMFCApplication1Dlg::OnBnClickedButtonwhat()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	UpdateData(TRUE);
+	if (str != "0")
+		str = str + _T(")");
+	else
+		str = ")";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedButton0()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	UpdateData(TRUE);
+	if (str != "0")
+		str = str + _T("0");
+	else
+		str = "0";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedButtonPoint()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	UpdateData(TRUE);
+	if (str != ""&&str!=".")
+		str = str + _T(".");
+	else
+		str = ".";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedClear()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	UpdateData(TRUE);
+	str = "";
+	str2 = "";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedButton1()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	UpdateData(TRUE);
+	if (str != "0")
+		str = str + _T("1");
+	else
+		str = "1";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedButton2()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	UpdateData(TRUE);
+	if (str != "0")
+		str = str + _T("2");
+	else
+		str = "2";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedButton3()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	UpdateData(TRUE);
+	if (str != "0")
+		str = str + _T("3");
+	else
+		str = "3";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedButton4()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	UpdateData(TRUE);
+	if (str != "0")
+		str = str + _T("4");
+	else
+		str = "4";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedButton5()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	UpdateData(TRUE);
+	if (str != "0")
+		str = str + _T("5");
+	else
+		str = "5";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedButton6()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	UpdateData(TRUE);
+	if (str != "0")
+		str = str + _T("6");
+	else
+		str = "6";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedButton7()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	UpdateData(TRUE);
+	if (str != "0")
+		str = str + _T("7");
+	else
+		str = "7";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedButton8()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	UpdateData(TRUE);
+	if (str != "0")
+		str = str + _T("8");
+	else
+		str = "8";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedButton9()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	UpdateData(TRUE);
+	if (str != "0")
+		str = str + _T("9");
+	else
+		str = "9";
+	UpdateData(FALSE);
+}
