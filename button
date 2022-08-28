@@ -1,0 +1,76 @@
+class CAboutDlg : public CDialogEx
+{
+public:
+	CAboutDlg();
+
+// 对话框数据
+#ifdef AFX_DESIGN_TIME
+	enum { IDD = IDD_ABOUTBOX };
+#endif
+
+	protected:
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV 支持
+
+// 实现
+protected:
+	DECLARE_MESSAGE_MAP()
+};
+
+CAboutDlg::CAboutDlg() : CDialogEx(IDD_ABOUTBOX)
+{
+}
+
+void CAboutDlg::DoDataExchange(CDataExchange* pDX)
+{
+	CDialogEx::DoDataExchange(pDX);
+}
+
+BEGIN_MESSAGE_MAP(CAboutDlg, CDialogEx)
+END_MESSAGE_MAP()
+
+
+// CMFCApplication1Dlg 对话框
+
+
+
+CMFCApplication1Dlg::CMFCApplication1Dlg(CWnd* pParent /*=nullptr*/)
+	: CDialogEx(IDD_MFCAPPLICATION1_DIALOG, pParent)
+{
+	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
+}
+
+void CMFCApplication1Dlg::DoDataExchange(CDataExchange* pDX)
+{
+	CDialogEx::DoDataExchange(pDX);
+	DDX_Text(pDX, IDC_EDIT1, str);
+	DDX_Text(pDX, IDC_EDIT2, str2);
+	
+}
+
+BEGIN_MESSAGE_MAP(CMFCApplication1Dlg, CDialogEx)
+	ON_WM_SYSCOMMAND()
+	ON_WM_PAINT()
+	ON_WM_QUERYDRAGICON()
+	ON_BN_CLICKED(IDC_ENTER, &CMFCApplication1Dlg::OnBnClickedEnter)
+	ON_EN_CHANGE(IDC_EDIT1, &CMFCApplication1Dlg::OnEnChangeEdit1)
+	ON_BN_CLICKED(IDC_BUTTONWHAT, &CMFCApplication1Dlg::OnBnClickedButtonwhat)
+	ON_BN_CLICKED(IDC_BUTTON0, &CMFCApplication1Dlg::OnBnClickedButton0)
+	ON_BN_CLICKED(IDC_BUTTONPOINT, &CMFCApplication1Dlg::OnBnClickedButtonPoint)
+	ON_BN_CLICKED(IDC_CLEAR, &CMFCApplication1Dlg::OnBnClickedClear)
+	ON_BN_CLICKED(IDC_BUTTON1, &CMFCApplication1Dlg::OnBnClickedButton1)
+	ON_BN_CLICKED(IDC_BUTTON2, &CMFCApplication1Dlg::OnBnClickedButton2)
+	ON_BN_CLICKED(IDC_BUTTON3, &CMFCApplication1Dlg::OnBnClickedButton3)
+	ON_BN_CLICKED(IDC_BUTTON4, &CMFCApplication1Dlg::OnBnClickedButton4)
+	ON_BN_CLICKED(IDC_BUTTON5, &CMFCApplication1Dlg::OnBnClickedButton5)
+	ON_BN_CLICKED(IDC_BUTTON6, &CMFCApplication1Dlg::OnBnClickedButton6)
+	ON_BN_CLICKED(IDC_BUTTON7, &CMFCApplication1Dlg::OnBnClickedButton7)
+	ON_BN_CLICKED(IDC_BUTTON8, &CMFCApplication1Dlg::OnBnClickedButton8)
+	ON_BN_CLICKED(IDC_BUTTON9, &CMFCApplication1Dlg::OnBnClickedButton9)
+	ON_BN_CLICKED(IDC_BUTTONMOD, &CMFCApplication1Dlg::OnBnClickedButtonMod)
+	ON_BN_CLICKED(IDC_BUTTONSUB, &CMFCApplication1Dlg::OnBnClickedButtonSub)
+	ON_BN_CLICKED(IDC_BUTTONPLUS, &CMFCApplication1Dlg::OnBnClickedButtonPlus)
+	ON_BN_CLICKED(IDC_BUTTONMIN, &CMFCApplication1Dlg::OnBnClickedButtonMin)
+	ON_BN_CLICKED(IDC_BUTTONADD, &CMFCApplication1Dlg::OnBnClickedButtonAdd)
+	ON_BN_CLICKED(IDC_BUTTONBACK, &CMFCApplication1Dlg::OnBnClickedButtonBack)
+	ON_BN_CLICKED(IDC_BUTTON10, &CMFCApplication1Dlg::OnBnClickedButton10)
+END_MESSAGE_MAP()
